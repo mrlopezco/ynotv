@@ -174,6 +174,8 @@ export interface Movie {
   // External IDs (if provider includes them)
   tmdb_id?: number;
   added?: Date | string;
+  /** Provider-supplied last-modified timestamp (Xtream / similar APIs). */
+  last_modified?: Date | string;
   container_extension?: string;
 }
 

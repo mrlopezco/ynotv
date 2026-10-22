@@ -181,7 +181,9 @@ export function formatDispatcharrProfileBadge(
 
 export interface SourceWithCategoriesLike {
   sourceId: string;
-  categories: Array<{ category_id: string; [key: string]: unknown }>;
+  // Keep this structural (no index signature) so CategoryWithCount / richer
+  // category shapes remain assignable without widening fields to `unknown`.
+  categories: Array<{ category_id: string }>;
 }
 
 /**

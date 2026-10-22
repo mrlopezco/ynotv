@@ -596,6 +596,11 @@
     100% { transform: translateX(350%); }
 }
 
+.section-actions {
+    display: flex;
+    gap: 8px;
+}
+
 .section-actions .sync-btn--all {
     background: color-mix(in srgb, var(--accent-primary, #00d4ff) 22%, transparent);
     border-color: color-mix(in srgb, var(--accent-primary, #00d4ff) 45%, transparent);
